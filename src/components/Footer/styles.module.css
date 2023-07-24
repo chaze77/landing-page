@@ -1,0 +1,87 @@
+.footer {
+  background-color: black;
+}
+
+.container {
+  padding: 52px 0px;
+}
+
+.logoGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logoFooterText {
+  display: flex;
+  gap: 5px;
+}
+.logoText {
+  font-weight: 400;
+  color: white;
+  font-size: 15px;
+}
+
+.footerItemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.itemFirstText,
+.itemFirsTextInfo {
+  color: white;
+  font-size: clamp(16px, 3vw, 22px);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.footerItemsGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerInfoGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemFirsTextInfo {
+  margin-bottom: 17px;
+}
+.itemsText {
+  color: white;
+  font-size: clamp(16px, 3vw, 18px);
+}
+
+.iconsText {
+  color: white;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+.logoFooter {
+  margin-bottom: 33px;
+}
+
+@media (max-width: 1200px) {
+  .logoGrid {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logoGrid,
+  .footerItemsContainer,
+  .footerInfoGrid {
+    align-items: center;
+  }
+  .itemFirstText {
+    margin-bottom: 0px;
+  }
+  .footerItemsContainer {
+    margin-bottom: 12px;
+  }
+}

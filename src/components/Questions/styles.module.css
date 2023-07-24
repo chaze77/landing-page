@@ -1,0 +1,129 @@
+.accordionSummary {
+  flex-direction: row-reverse;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.accordionTitle {
+  font-size: clamp(14px, 1vw, 18px);
+}
+.accordionText {
+  font-size: clamp(14px, 1vw, 16px);
+}
+
+.container {
+  padding-top: 150px;
+  margin-bottom: 200px;
+}
+
+.title {
+  font-size: clamp(38px, 2vw, 48px);
+  color: black;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin-bottom: 39px;
+}
+
+.text {
+  margin-bottom: 60px;
+  font-size: 18px;
+  width: 70%;
+}
+
+.faq {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 1327px;
+}
+
+.form {
+  background-color: #abccf3;
+  border-radius: 8px;
+  padding: 50px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formTitle {
+  font-size: clamp(24px, 2vw, 40px);
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.formText {
+  font-size: clamp(14px, 1vw, 18px);
+  margin-bottom: 43px;
+  text-align: justify;
+}
+
+.formInput,
+.formTextArea {
+  margin-bottom: 15px;
+  width: 90%;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 29px 40px;
+}
+
+.formInput::placeholder,
+.formTextArea::placeholder {
+  /* text-align: center; */
+  color: #bfbfbf;
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+.formTextArea::placeholder,
+.formInput::placeholder {
+  padding: 29px 0px 0px 40px;
+}
+
+.formTextArea {
+  height: 180px;
+  margin-bottom: 29px;
+}
+
+.formButton {
+  padding: 13px 0px;
+  background-color: #5699e8;
+  color: white;
+  border-radius: 8px;
+  width: 90%;
+  text-transform: none;
+  font-size: clamp(14px, 1vw, 20px);
+}
+
+@media (max-width: 1400px) {
+  .faq {
+    max-width: 900px;
+  }
+  .formTextArea::placeholder,
+  .formInput::placeholder {
+    padding: 15px 0px 0px 20px;
+  }
+
+  .title {
+    font-size: clamp(30px, 2vw, 38px);
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+  .container {
+    padding-top: 50px;
+  }
+
+  .formInput,
+  .formTextArea {
+    padding: 15px 20px;
+  }
+}

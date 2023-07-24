@@ -1,0 +1,57 @@
+.navLogo {
+  width: 30%;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 26px 0px;
+}
+
+.buttonsContainer {
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+.buttonItems,
+.buttonItemsBold {
+  color: black;
+  text-transform: none;
+  font-size: clamp(12px, 1.5vw, 20px);
+  padding: 0px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.buttonItemsBold {
+  font-weight: 600;
+  font-size: clamp(14px, 1.5vw, 22px);
+}
+
+.buttonItems:hover {
+  text-decoration: underline;
+}
+
+.listItemButton {
+  text-align: center;
+}
+
+.headerBox {
+  background-color: white;
+  border-bottom: 0.5px solid #d9d9d9;
+}
+
+@media (max-width: 900px) {
+  .buttonsContainer {
+    width: 75%;
+  }
+  .navLogo {
+    width: 25%;
+  }
+}
+@media (max-width: 600px) {
+  .navLogo {
+    width: 50%;
+  }
+}

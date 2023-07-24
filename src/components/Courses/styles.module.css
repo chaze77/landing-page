@@ -1,0 +1,130 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 21px;
+}
+
+.title {
+  font-size: clamp(38px, 3vw, 48px);
+  margin-bottom: 64px;
+  font-weight: 600;
+  margin-bottom: 67px;
+}
+
+.courseNameContainer {
+  background-color: #5699e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 21px, 21px, 0px, 0px;
+  /* margin-bottom: 52px; */
+  /* border: 1px solid red; */
+}
+
+.nameOfCourse {
+  color: white;
+  font-size: clamp(20px, 1.5vw, 28px);
+  margin-right: 19px;
+}
+
+.detailsOfCourse {
+  font-weight: 300;
+  color: white;
+  font-size: clamp(18px, 1.5vw, 26px);
+}
+
+.courseInformationContainer {
+  background-color: #f4f7fb;
+  padding: 30px;
+}
+
+.boxLabels {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.countOfCourse {
+  font-size: clamp(16px, 3vw, 22px);
+  font-weight: "bold";
+  margin-bottom: 44px;
+}
+
+.courseLabels {
+  font-size: clamp(16px, 3vw, 20px);
+  color: #87898b;
+  margin-right: 2px;
+  /* padding: 0px ; */
+}
+
+.courseAnswers {
+  font-size: clamp(16px, 3vw, 20px);
+  color: black;
+  font-weight: 400;
+}
+
+.lastPrice {
+  display: block;
+  font-size: clamp(16px, 3vw, 24px);
+  text-decoration: line-through;
+  color: #a9a9a9;
+  margin-right: 20px;
+}
+
+.newPrice {
+  font-weight: bold;
+  font-size: clamp(20px, 3vw, 40px);
+  color: #5699e8;
+}
+
+.courseButton {
+  background-color: #ffaf01;
+  font-size: clamp(16px, 3vw, 20px);
+  color: black;
+  width: clamp(200px, 30vh, 300px);
+  text-transform: none;
+  font-weight: bold;
+  margin-bottom: 22px;
+  border-radius: 10px;
+}
+
+.startCourse {
+  font-weight: 500;
+  color: #5699e8;
+}
+
+.boxPrices {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.boxButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 1700px) {
+  .nameOfCourse {
+    font-size: 18px;
+  }
+  .courseNameContainer {
+    padding: 20px 10px;
+  }
+  .detailsOfCourse {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1400px) {
+  .title {
+    font-size: clamp(30px, 2vw, 38px);
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+}

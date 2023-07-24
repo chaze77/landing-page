@@ -1,0 +1,59 @@
+.gridContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gridItems {
+  padding: 20px;
+}
+
+.boxItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: clamp(38px, 3vw, 48px);
+  font-weight: 600;
+  margin-bottom: 98px;
+}
+
+.firstImage {
+  margin-bottom: 31px;
+}
+
+.text {
+  font-family: "Gilroy-Bold";
+  font-size: clamp(14px, 1.5vw, 22px);
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1400px) {
+  .title {
+    font-size: clamp(30px, 2vw, 38px);
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 900px) {
+  .text {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .text {
+    font-size: 12px;
+  }
+}

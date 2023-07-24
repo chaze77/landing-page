@@ -1,0 +1,54 @@
+.container {
+  margin-bottom: 117px;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.title {
+  font-size: clamp(38px, 2vw, 48px);
+  margin-bottom: 64px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.innerContainer {
+  width: 100%;
+  background-color: #f4f7fb;
+  border-radius: 21px;
+  padding: 56px;
+}
+
+@media (max-width: 1400px) {
+  .title {
+    font-size: clamp(30px, 2vw, 38px);
+    /* font-family: "Gilroy-bold" ; */
+  }
+}
+
+@media (max-width: 900px) {
+  .innerContainer {
+    padding: 20px;
+  }
+  .title {
+    margin-bottom: 32px;
+  }
+  .container {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .text {
+    font-size: 14px;
+  }
+}

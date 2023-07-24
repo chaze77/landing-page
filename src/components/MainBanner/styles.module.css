@@ -1,0 +1,60 @@
+.bannerTitle,
+.bannerTitleBlue {
+  font-size: clamp(38px, 3vw, 48px);
+  font-weight: 600;
+  color: black;
+  text-align: left;
+}
+
+.bannerTitleBlue {
+  color: #5699e8;
+  white-space: nowrap;
+}
+
+.bannerText {
+  font-size: clamp(12px, 3vw, 20px);
+}
+
+.bannerBox {
+  margin-bottom: 18px;
+}
+
+.button {
+  text-transform: none;
+  background-color: white;
+  border: 1px solid #5699e8;
+  color: #5699e8;
+  width: 300px;
+  padding: 15px 0px;
+  font-size: clamp(12px, 1.5vw, 20px);
+}
+
+.gridContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1400px) {
+  .bannerTitle,
+  .bannerTitleBlue {
+    font-size: clamp(30px, 2vw, 38px);
+  }
+  .bannerTitleBlue {
+    white-space: nowrap;
+  }
+
+  .bannerText {
+    font-size: clamp(8px, 3vw, 14px);
+  }
+
+  .button {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .bannerTitle,
+  .bannerTitleBlue {
+    font-size: 24px;
+  }
+}

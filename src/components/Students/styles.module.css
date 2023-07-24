@@ -1,0 +1,77 @@
+.title {
+  font-size: clamp(38px, 3vw, 48px);
+  color: black;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin-bottom: 59px;
+}
+
+.video {
+  height: 400px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.studentInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.studentPicture {
+  margin-right: 30px;
+}
+
+.studentInfoDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.studentName {
+  font-size: 18px;
+  font-family: "Gilroy-Bold";
+}
+
+.text {
+  font-size: 16px;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1699px) {
+  .video {
+    width: 870px;
+    height: 508px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .text {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: clamp(30px, 2vw, 38px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .lastArrowBox {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px;
+  }
+}
