@@ -20,7 +20,7 @@ const Footer = () => {
             xs={12}
             className={styles.logoGrid}
           >
-            <Box>
+            <Box sx={{ pl: { xl: "0px", lg: "0px", md: "40px", sm: "40px" } }}>
               <img className={styles.logoFooter} src={f_logo} alt="" />
               <Box className={styles.logoFooterText}>
                 <img src={c} />
