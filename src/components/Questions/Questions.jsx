@@ -9,10 +9,10 @@ import FAQ from "../../assets/FAQ.png";
 
 const Questions = () => {
   return (
-    <section style={{ position: "relative" }}>
-      <Box>
+    <section className={styles.question}>
+      {/* <Box>
         <img className={styles.faq} src={FAQ} alt="" />
-      </Box>
+      </Box> */}
       <StyledContainer fixed className={styles.container}>
         <Grid container spacing={0} alignItems="flex-start">
           {/* First column: Frequently Asked Questions */}

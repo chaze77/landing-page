@@ -5,6 +5,10 @@
   max-width: 1327px;
 }
 
+.question {
+  background: url("../../assets/FAQ.png") no-repeat right top;
+}
+
 .accordionSummary {
   flex-direction: row-reverse;
   margin-right: 10px;
