@@ -1,3 +1,10 @@
+.faq {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 1327px;
+}
+
 .accordionSummary {
   flex-direction: row-reverse;
   margin-right: 10px;
@@ -29,13 +36,6 @@
   margin-bottom: 60px;
   font-size: 18px;
   width: 70%;
-}
-
-.faq {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 1327px;
 }
 
 .form {
