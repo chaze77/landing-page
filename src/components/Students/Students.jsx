@@ -42,57 +42,64 @@ const Students = () => {
             Что говорят наши студенты
           </Typography>
         </Box>
-        {/* <Slider {...sliderSettings} ref={sliderRef}> */}{" "}
-        {/* Добавляем ref */}
-        {studentsData.map((student, index) => (
-          <Box key={index}>
-            <Grid container sx={{ mb: "34px" }}>
-              <Grid
-                item
-                xl={6.8}
-                lg={6.8}
-                md={6.8}
-                sm={12}
-                xs={12}
-                sx={{
-                  display: {
-                    xl: "block",
-                    lg: "block",
-                    md: "block",
-                    sm: "none",
-                    xs: "none",
-                  },
-                }}
-              >
-                <img src={student.video} alt="video" className={styles.video} />
-              </Grid>
-              <Grid item xl={0.2} lg={0.2} md={0.2}></Grid>
-              <Grid item xl={5} lg={5} md={5} sm={12} xs={12}>
-                <Box className={styles.information}>
-                  <Box className={styles.studentInfo}>
+        <Box sx={{ witdth: "99%" }}>
+          <Slider {...sliderSettings} ref={sliderRef}>
+            {" "}
+            {/* Добавляем ref */}
+            {studentsData.map((student, index) => (
+              <Box key={index}>
+                <Grid container sx={{ mb: "34px" }}>
+                  <Grid
+                    item
+                    xl={6.8}
+                    lg={6.8}
+                    md={6.8}
+                    sm={12}
+                    xs={12}
+                    sx={{
+                      display: {
+                        xl: "block",
+                        lg: "block",
+                        md: "block",
+                        sm: "none",
+                        xs: "none",
+                      },
+                    }}
+                  >
                     <img
-                      src={student.profile}
-                      alt="profile"
-                      className={styles.studentPicture}
+                      src={student.video}
+                      alt="video"
+                      className={styles.video}
                     />
-                    <Box className={styles.studentInfoDetails}>
-                      <Typography className={styles.studentName}>
-                        {student.name}
-                      </Typography>
-                      <BasicRating rating={student.rating} />
+                  </Grid>
+                  <Grid item xl={0.2} lg={0.2} md={0.2}></Grid>
+                  <Grid item xl={5} lg={5} md={5} sm={12} xs={12}>
+                    <Box className={styles.information}>
+                      <Box className={styles.studentInfo}>
+                        <img
+                          src={student.profile}
+                          alt="profile"
+                          className={styles.studentPicture}
+                        />
+                        <Box className={styles.studentInfoDetails}>
+                          <Typography className={styles.studentName}>
+                            {student.name}
+                          </Typography>
+                          <BasicRating rating={student.rating} />
+                        </Box>
+                      </Box>
+                      <Box>
+                        <Typography className={styles.text}>
+                          {student.text}
+                        </Typography>
+                      </Box>
                     </Box>
-                  </Box>
-                  <Box>
-                    <Typography className={styles.text}>
-                      {student.text}
-                    </Typography>
-                  </Box>
-                </Box>
-              </Grid>
-            </Grid>
-          </Box>
-        ))}
-        {/* </Slider> */}
+                  </Grid>
+                </Grid>
+              </Box>
+            ))}
+          </Slider>
+        </Box>
         <Box className={styles.arrows}>
           <Button onClick={handlePrevSlide}>
             <img src={left} alt="left" />
