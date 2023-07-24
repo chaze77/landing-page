@@ -5,8 +5,6 @@ import Courses from "./components/Courses/Courses";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import MainBanner from "./components/MainBanner/MainBanner";
-import ControlledAccordions from "./components/Questions/AccordionComponent";
-import CustomizedAccordions from "./components/Questions/AccordionComponent";
 import Questions from "./components/Questions/Questions";
 import Students from "./components/Students/Students";
 

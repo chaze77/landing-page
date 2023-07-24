@@ -15,10 +15,12 @@ export const footerItems = [
 
 export const footerInfo = [
   {
+    id: "1",
     picture: mail,
     text: "odigital@gmail.com",
   },
   {
+    id: "2",
     picture: phone,
     text: "+996 709 554 789",
   },

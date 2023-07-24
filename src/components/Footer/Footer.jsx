@@ -42,6 +42,7 @@ const Footer = () => {
             <Box className={styles.footerItemsContainer}>
               {footerItems.map((item, idx) => (
                 <Typography
+                  key={idx}
                   className={
                     idx === 0 ? styles.itemFirstText : styles.itemsText
                   }
@@ -76,7 +77,7 @@ const Footer = () => {
               </Typography>
               <Box sx={{ mb: "34px" }}>
                 {footerInfo.map((info) => (
-                  <Box sx={{ display: "flex", mb: "11px" }}>
+                  <Box sx={{ display: "flex", mb: "11px" }} key={info.id}>
                     <img
                       style={{ marginRight: "18px" }}
                       src={info.picture}

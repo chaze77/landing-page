@@ -21,9 +21,9 @@ const Benifits = () => {
               sm={6}
               xs={6}
               className={styles.gridItems}
+              key={element.id}
             >
               <Box
-                key={element.id}
                 className={styles.boxItems}
                 sx={{
                   borderRight: {

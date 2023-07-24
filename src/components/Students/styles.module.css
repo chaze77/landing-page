@@ -24,6 +24,8 @@
 
 .studentPicture {
   margin-right: 30px;
+  width: 80px;
+  height: 80px;
 }
 
 .studentInfoDetails {
