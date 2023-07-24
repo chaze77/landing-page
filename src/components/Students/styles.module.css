@@ -47,7 +47,7 @@
 .arrows {
   display: flex;
   justify-content: space-between;
-  width: 96%;
+  width: 98%;
 }
 
 @media (min-width: 1699px) {
