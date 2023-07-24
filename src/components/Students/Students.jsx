@@ -42,7 +42,7 @@ const Students = () => {
             Что говорят наши студенты
           </Typography>
         </Box>
-        <Box sx={{ width: "98%" }}>
+        <Box sx={{ width: "95%" }}>
           <Slider {...sliderSettings} ref={sliderRef}>
             {" "}
             {/* Добавляем ref */}
